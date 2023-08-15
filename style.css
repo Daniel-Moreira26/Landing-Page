@@ -129,7 +129,7 @@ ul {
 }
 
 .section {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .container {
@@ -174,7 +174,7 @@ ul {
 }
 
 .white-bg {
-    height: 100vh;
+    height: 110vh;
 }
 
 .top3-content {
