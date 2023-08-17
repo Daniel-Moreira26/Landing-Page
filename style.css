@@ -177,10 +177,10 @@ ul {
 
 .top3-content {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     text-align: center;
-    max-width: 640px;
+    max-width: 650px;
     margin-bottom: 60px;
 }
 
@@ -261,5 +261,61 @@ ul {
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+#Pricing {
+    background: url(img/scattered-forcefields.png) center;
+    color: whitesmoke;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+#Pricing h2 {
+    padding-top: 70px;
+}
+
+.table-content {
+    max-width: 650px;
+    margin: auto;
+    padding-top: ;
+}
+
+.table-content h2 {
+    margin-bottom: 20px;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 360px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 70px;
+    background-color: whitesmoke;
+    color: #0a1128;
+    
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    text-align: left;
+}
+
+tfoot td, table th{
+    background-color: lightgray;
+    text-align: center;
 }
 
