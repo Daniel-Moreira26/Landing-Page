@@ -6,6 +6,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 html {
@@ -319,6 +320,66 @@ tfoot td, table th{
     text-align: center;
 }
 
-#contact {
-    
+.form-text {
+    margin-left: 60px;
 }
+
+.img-contact img {
+    max-width: 500px;
+    max-height: 400px;
+    position: relative;
+    left: 230px;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact-form {
+    background: url(img/scattered-forcefields.png);
+    background-size: cover;
+    color: whitesmoke;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.container-form {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-column input {
+    padding: 5px 150px 5px 5px;
+}
+
+.rigth-column label, 
+.left-column label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.rigth-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    width: 400px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
