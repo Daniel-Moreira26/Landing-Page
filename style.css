@@ -279,7 +279,8 @@ ul {
 .table-content {
     max-width: 650px;
     margin: auto;
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .table-content h2 {
@@ -349,6 +350,15 @@ fieldset {
     display: flex;
 }
 
+#contact-title {
+    padding-top: 50px;
+}
+
+
+fieldset legend {
+    margin-bottom: 30px;
+}
+
 .left-column {
     flex: 1;
     display: flex;
@@ -358,6 +368,12 @@ fieldset {
 
 .left-column input {
     padding: 5px 150px 5px 5px;
+}
+
+.rigth-column textarea,
+.left-column input {
+    border-radius: 10px;
+    border: 2px solid rgba(19, 19, 19, 0.555);
 }
 
 .rigth-column label, 
@@ -379,7 +395,39 @@ textarea {
     margin-bottom: 10px;
 }
 
+.rigth-column p {
+    position: relative;
+    right: 117px;
+}
 
+.rigth-column button {
+    padding: 7px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.rigth-column button:hover {
+    cursor: pointer;
+    background-color: rgba(231, 231, 231, 0.849);
+}
+
+footer { 
+    text-align: center;
+    background: url(img/scattered-forcefields.png);
+    background-size: cover;
+    padding-bottom: 3px;
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+footer a {
+    color: rgba(240, 229, 210, 0.993);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 
 
