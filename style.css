@@ -356,57 +356,11 @@ fieldset legend {
     margin-bottom: 30px;
 }
 
-.left-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.contact-form {
+    grid-column: span 2;
 }
 
-.left-column input {
-    padding: 5px 150px 5px 5px;
-}
 
-.rigth-column textarea,
-.left-column input {
-    border-radius: 10px;
-    border: 2px solid rgba(19, 19, 19, 0.555);
-}
-
-.rigth-column label, 
-.left-column label {
-    display: block;
-    padding-bottom: 10px;
-}
-
-.rigth-column {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-textarea {
-    width: 400px;
-    padding-bottom: 50px;
-    margin-bottom: 10px;
-}
-
-.rigth-column p {
-    position: relative;
-    right: 117px;
-}
-
-.rigth-column button {
-    padding: 7px;
-    border-radius: 4px;
-    background-color: whitesmoke;
-}
-
-.rigth-column button:hover {
-    cursor: pointer;
-    background-color: rgba(231, 231, 231, 0.849);
-}
 
 footer { 
     text-align: center;
@@ -424,20 +378,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@media (max-width:800px) {
-    .left-column {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        max-width: 320px;
-        gap: 10px;
-    }
-
-    .rigth-column {
-        display: flex;
-        margin-top: 100px;
-      
-    }
 }
