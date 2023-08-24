@@ -354,10 +354,6 @@ fieldset legend {
     font-size: 1.6rem;
 }
 
-.contact-form {
-    grid-column: span 2;
-}
-
 .contact-form .form-grid {
     border: none;
     display: flex;
