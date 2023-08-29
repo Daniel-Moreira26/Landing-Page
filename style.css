@@ -144,7 +144,7 @@ ul {
 
 .intro-text {
     float: left;
-    width: 40%;
+    max-width: 50%;
     margin-top: 50px;
     margin-left: 30px;
     font-size: 2rem;
@@ -155,6 +155,7 @@ ul {
     float: right;
     width: 50%;
     height: auto;
+    padding-right: 30px;
 }
 
 .intro-img img {
@@ -171,7 +172,7 @@ ul {
 
 .intro-text p {
     margin-left: 5px;
-    max-width: 400px;
+    max-width: 600px;
     padding-bottom: 40px;
     line-height: 1.6;
 }
@@ -428,4 +429,57 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .intro-text, 
+    .top3-content, 
+    .grid-one, 
+    .table-content {
+        padding-top: 50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        gap: 0px;
+    }
+
+    .intro-text {
+        max-width: 700px;
+        padding-bottom: 0px;
+    }
+
+    .intro-img {
+        max-width: 50%;
+        padding-bottom: 30px;
+    }
+
+    .grid-img {
+        grid-template-columns: 1fr 1fr;
+       
+    }
+
+}
+
+@media (max-width: 600px) {
+    p {
+       padding: 10px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-img {
+        padding-left: 50px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .grid-img {
+        padding-left: 0px;
+    }
 }
