@@ -431,6 +431,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.close-menu {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .intro-text, 
     .top3-content, 
@@ -460,6 +464,71 @@ footer a:hover {
     .grid-img {
         grid-template-columns: 1fr 1fr;
        
+    }
+
+    #menu {
+        display: none;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 3;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: whitesmoke;
+        font-size: 3rem;
+        line-height: 3rem;
+        height: 3rem;
+        width: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~#menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
+    .menu-spacing {
+        display: none;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: whitesmoke;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        text-decoration: none;
+        transform: rotate(-90deg);
     }
 
 }

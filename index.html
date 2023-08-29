@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
     <header id="menu">
         <div class="main-content menu-content">
-            <h1 class="logo"><a href="index.html">Logo</a></h1>
+            <h1 class="logo" onclick="getElementById('close-menu').checked = false;"><a href="index.html">Logo</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a>
                     <li><a href="#Silicon-based">Silicon-based</a>
                     <li><a href="#grid-one">My Grid</a>
@@ -221,4 +225,6 @@
     <footer class="rodape">
         <p>Feito com ❤️ por <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/daniel-moreira-de-oliveira-b87370173/">Daniel Moreira</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
 </html>
